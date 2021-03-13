@@ -2,7 +2,8 @@ import argparse
 
 
 def parse():
-    parser = argparse.ArgumentParser(description='Encode and decode ASCII chars and ASCII numbers.',
+    parser = argparse.ArgumentParser(description='Encode and decode ASCII chars and ASCII numbers.'
+                                                 'Write input separeted by spaces',
                                      epilog='Safety first! :)')
 
     parser.add_argument('coding_type',

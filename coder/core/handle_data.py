@@ -10,14 +10,12 @@ def encoding(characters: str):
 def decoding(character_codes: list):
     character_codes = character_codes.split()
     char_value = int(character_codes[0])
-    decoded = chr(int(character_codes[0]))
+    decoded = chr(char_value)
 
     if len(character_codes) > 1:
         for i in range(1, len(character_codes)):
             char_value += int(character_codes[i])
             decoded += chr(char_value)
-    else:
-        decoded = chr(char_value)
 
     return decoded
 
